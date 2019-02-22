@@ -33,14 +33,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+* adaptive websites have specific css files for specific devices
+* responsive websites respond to the viewport so they use media queries and breakpoints to change their layout on the fly from one css file
 
 2. Describe what it means to be mobile first vs desktop first.
+* mobile first start with a mobile design file, starting css is for a small design with larger designs in media queries, media queries have `min-width`
+* desktop first start with a desktop design file, starting css is for a large design with smaller designs in media queries, media queries have `max-width`
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+* makes it easier to write rem font sizes so the font sizes adapt to the users settings. changes the deafult size from 16px to 10px `62.5% === 10/16`. makes writing sizes so much easier to convert on the fly because 10px is 1rem.
 
 4. How would you describe preprocessing to someone new to CSS?
+* preprocessing allows us to use a seperate syntax from css like less or sass thats easier to use and has more powerful abilities. then we use the preprocessor to compile that syntax into a vanilla css file that the browser understands.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+* parametric mixins, variables, equations. so much good stuff. CSS guards on the other hand... we didnt really go over them in class and I havent dug into the docs to far about them, they look like it might be a control flow type of situation but im not sure, so that troubles me. idk how to use it.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,18 +59,18 @@ Because you are using a preprocessor, there are two parts to setting up your pro
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
