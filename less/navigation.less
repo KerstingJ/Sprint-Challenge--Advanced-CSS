@@ -1,1 +1,28 @@
 // Navigation code here
+.navigation {
+    .centeredColumn();
+    padding: 1rem;
+
+    .main-h {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+
+        //lowkey proud of this, its kinda nonsensiscle but works
+        //the # of chars in .main-h * the font-size of main-h
+        width: 12rem * 5;
+
+        @media (max-width: 12rem * 5) {
+            width: 100%;
+        }
+
+        a {
+            font-size: 1.8rem;
+        }
+    }
+}
